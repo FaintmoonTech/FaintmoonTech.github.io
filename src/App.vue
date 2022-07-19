@@ -1,26 +1,98 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <img src="./assets/bg6.png" class="bg" />
+    <div id="scrollEle" />
+    <Page0 :scrollY="scrollY" :winHeight="winHeight" />
+    <Page1 :scrollY="scrollY" :winHeight="winHeight" :winWidth="winWidth" />
+    <Page2 :scrollY="scrollY" :winHeight="winHeight" />
+    <div class="page">
+      <p class="title">
+        时光旅行
+      </p>
+      <p class="subtitle">
+        观察星空随着时间的变化
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Page0 from './components/Page0.vue'
+import Page1 from './components/Page1.vue'
+import Page2 from './components/Page2.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Page0,
+    Page1,
+    Page2
+  },
+  mounted() {
+    window.onscroll = () => {
+      const scrollY = window.scrollY / window.innerHeight;
+      console.log("scrollY", scrollY);
+      this.scrollY = scrollY;
+    }
+    window.onresize = () => {
+      this.winWidth = window.document.body.clientWidth;
+      this.winHeight = window.innerHeight;
+    }
+    this.winWidth = window.document.body.clientWidth;
+    this.winHeight = window.innerHeight;
+  },
+  data() {
+    return {
+      scrollY: 0,
+      // 不包括滚动条宽度
+      winWidth: window.document.body.clientWidth,
+      winHeight: window.innerHeight
+    }
+  },
 }
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #ffffff;
+}
+
+#scrollEle {
+  height: 2000vh;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+div.page {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+p.title {
+  padding-top: 40px;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+p.subtitle {
+  font-size: 1rem;
 }
 </style>
