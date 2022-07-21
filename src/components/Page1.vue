@@ -7,7 +7,7 @@
             轻轻一点，了解您想知道的一切
         </p>
     </div>
-    <canvas width="100" height="100" :style="canvasStyle" />
+    <canvas width="100" height="100" class="starSelection" :style="canvasStyle" />
     <div class="starIntro" :style="starIntroStyle">
         <p :style="{ opacity: 2 * scrollY - 3 }">轩辕十四</p>
         <p :style="{ opacity: 2 * scrollY - 3.5 }">外文名: Regulus</p>
@@ -28,7 +28,7 @@ export default {
         winWidth: Number
     },
     mounted() {
-        const canvas = document.querySelector("canvas");
+        const canvas = document.querySelector(".starSelection");
         const ctx = canvas.getContext("2d");
         this.drawCanvas(ctx, 0);
     },
@@ -169,7 +169,7 @@ export default {
 </script>
 
 <style>
-canvas {
+.starSelection {
     position: fixed;
     width: 50px;
     height: 50px;

@@ -1,18 +1,11 @@
 <template>
   <div class="app">
-    <img src="./assets/bg6.png" class="bg" />
+    <img src="./assets/bg0.png" class="bg" />
     <div id="scrollEle" />
     <Page0 :scrollY="scrollY" :winHeight="winHeight" />
     <Page1 :scrollY="scrollY" :winHeight="winHeight" :winWidth="winWidth" />
     <Page2 :scrollY="scrollY" :winHeight="winHeight" />
-    <div class="page">
-      <p class="title">
-        时光旅行
-      </p>
-      <p class="subtitle">
-        观察星空随着时间的变化
-      </p>
-    </div>
+    <Page3 :scrollY="scrollY" :winHeight="winHeight" />
   </div>
 </template>
 
@@ -20,13 +13,15 @@
 import Page0 from './components/Page0.vue'
 import Page1 from './components/Page1.vue'
 import Page2 from './components/Page2.vue'
+import Page3 from './components/Page3.vue'
 
 export default {
   name: 'App',
   components: {
     Page0,
     Page1,
-    Page2
+    Page2,
+    Page3
   },
   mounted() {
     window.onscroll = () => {
@@ -75,6 +70,7 @@ body {
   object-fit: cover;
   position: fixed;
   left: 0;
+  top: 0;
   z-index: -1;
 }
 
@@ -85,14 +81,14 @@ div.page {
   top: 0;
 }
 
-p.title {
+.page > p.title {
   padding-top: 40px;
   margin: 0;
   font-size: 2rem;
   font-weight: lighter;
 }
 
-p.subtitle {
+.page > p.subtitle {
   font-size: 1rem;
 }
 </style>
