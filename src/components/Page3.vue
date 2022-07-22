@@ -1,13 +1,13 @@
 <template>
     <div class="page" :style="pageStyle">
-        <img src="../assets/bg1.png" class="bg" :style="{opacity: 2 * scrollY - 19.5}" />
-        <img src="../assets/bg2.png" class="bg" :style="{opacity: 2 * scrollY - 21.5}" />
-        <img src="../assets/bg3.png" class="bg" :style="{opacity: 2 * scrollY - 23.5}" />
-        <img src="../assets/bg4.png" class="bg" :style="{opacity: 2 * scrollY - 25.5}" />
-        <img src="../assets/bg5.png" class="bg" :style="{opacity: 2 * scrollY - 27.5}" />
-        <img src="../assets/bg6.png" class="bg" :style="{opacity: 2 * scrollY - 29.5}" />
-        <img src="../assets/bg7.png" class="bg" :style="{opacity: 2 * scrollY - 31.5}" />
-        <img src="../assets/bg8.png" class="bg" :style="{opacity: 2 * scrollY - 33.5}" />
+        <img src="../assets/bg1.webp" class="bg" :style="{opacity: 2 * scrollY - 19.5}" />
+        <img src="../assets/bg2.webp" class="bg" :style="{opacity: 2 * scrollY - 21.5}" />
+        <img src="../assets/bg3.webp" class="bg" :style="{opacity: 2 * scrollY - 23.5}" />
+        <img src="../assets/bg4.webp" class="bg" :style="{opacity: 2 * scrollY - 25.5}" />
+        <img src="../assets/bg5.webp" class="bg" :style="{opacity: 2 * scrollY - 27.5}" />
+        <img src="../assets/bg6.webp" class="bg" :style="{opacity: 2 * scrollY - 29.5}" />
+        <img src="../assets/bg7.webp" class="bg" :style="{opacity: 2 * scrollY - 31.5}" />
+        <img src="../assets/bg8.webp" class="bg" :style="{opacity: 2 * scrollY - 33.5}" />
         <p class="title">
             时空旅行
         </p>
