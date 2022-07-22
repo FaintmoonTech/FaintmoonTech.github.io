@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <img src="./assets/bg0.webp" class="bg" />
+    <img src="./assets/bg0.jpg" class="bg" />
     <div id="scrollEle" />
     <Page0 :scrollY="scrollY" :winHeight="winHeight" />
     <Page1 :scrollY="scrollY" :winHeight="winHeight" :winWidth="winWidth" />
