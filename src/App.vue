@@ -26,7 +26,6 @@ export default {
   mounted() {
     window.onscroll = () => {
       const scrollY = window.scrollY / window.innerHeight;
-      console.log("scrollY", scrollY);
       this.scrollY = scrollY;
     }
     window.onresize = () => {
