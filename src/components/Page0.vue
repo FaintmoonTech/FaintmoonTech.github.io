@@ -8,12 +8,15 @@
     </p>
     <div class="downloads">
       <div class="android" v-on:click="goToMarket">
-        <img src="../assets/android-logo.svg" />
+        <img src="../assets/android-logo.svg" class="icon" />
         Android
       </div>
-      <div class="ios">
-        <img src="../assets/apple-logo.svg" />
-        App Store
+      <div>
+        <div class="ios">
+          <img src="../assets/apple-logo.svg" class="icon" />
+          App Store
+        </div>
+        <p>敬请期待</p>
       </div>
     </div>
   </div>
@@ -69,12 +72,18 @@ div.downloads {
   animation-duration: 3s;
 }
 
-div.downloads>div {
+div.downloads>div>p {
+  color: #ffffff77;
+  margin: 0.3rem;
+  font-size: 0.5rem;
+}
+
+div.android,
+div.ios {
   height: 2rem;
-  margin: 1rem;
+  margin: 5rem 1rem 0 1rem;
   border: 2px solid #ffffff55;
   border-radius: 2rem;
-  margin-top: 5rem;
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -87,12 +96,12 @@ div.downloads>div.android:hover {
   background: #ffffff33;
 }
 
-div.downloads>div.ios {
+div.ios {
   color: #ffffff77;
   cursor: auto;
 }
 
-div.downloads>div>img {
+img.icon {
   width: 1.1rem;
   margin-right: 0.4rem;
 }
