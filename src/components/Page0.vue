@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     goToMarket() {
-      window.open("market://detail?id=com.tencent.mm")
+      window.open("./starmystery-release-v1.0.0-1390095.apk")
     }
   }
 }
