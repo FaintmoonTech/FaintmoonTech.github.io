@@ -74,8 +74,8 @@ div.downloads {
 
 div.downloads>div>p {
   color: #ffffff77;
-  margin: 0.3rem;
-  font-size: 0.5rem;
+  margin: 0.1rem;
+  font-size: 0.7rem;
 }
 
 div.android,
