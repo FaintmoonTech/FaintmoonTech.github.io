@@ -6,6 +6,7 @@
     <Page1 :scrollY="scrollY" :winHeight="winHeight" :winWidth="winWidth" />
     <Page2 :scrollY="scrollY" :winHeight="winHeight" />
     <Page3 :scrollY="scrollY" :winHeight="winHeight" />
+    <Page4 :scrollY="scrollY" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Page0 from './components/Page0.vue'
 import Page1 from './components/Page1.vue'
 import Page2 from './components/Page2.vue'
 import Page3 from './components/Page3.vue'
+import Page4 from './components/Page4.vue'
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     Page0,
     Page1,
     Page2,
-    Page3
+    Page3,
+    Page4
   },
   mounted() {
     window.onscroll = () => {
