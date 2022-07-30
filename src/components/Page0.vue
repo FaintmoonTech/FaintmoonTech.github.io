@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     goToMarket() {
-      window.open("./starmystery-release-v1.0.0-fd971dc.apk")
+      window.open("./starmystery-release-v1.0.0-c0e02c5.apk")
     }
   }
 }
