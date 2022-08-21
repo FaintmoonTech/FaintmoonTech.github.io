@@ -1,7 +1,7 @@
 <template>
     <div class="page footer" :style="pageStyle">
         <p>
-            <a href="./user-agreement.html">用户协议</a>
+            <a href="./terms-of-service.html">用户协议</a>
             |
             <a href="./privacy-policy.html">隐私政策</a>
         </p>
