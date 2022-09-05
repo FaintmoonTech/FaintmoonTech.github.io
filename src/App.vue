@@ -1,7 +1,8 @@
 <template>
   <div class="app">
     <img src="./assets/bg0.jpg" class="bg" />
-    <div id="scrollEle" />
+    <div id="scrollEle"></div>
+    <AnchorList :scrollY="scrollY" />
     <Page0 :scrollY="scrollY" :winHeight="winHeight" />
     <Page1 :scrollY="scrollY" :winHeight="winHeight" :winWidth="winWidth" />
     <Page2 :scrollY="scrollY" :winHeight="winHeight" />
@@ -16,6 +17,7 @@ import Page1 from './components/Page1.vue'
 import Page2 from './components/Page2.vue'
 import Page3 from './components/Page3.vue'
 import Page4 from './components/Page4.vue'
+import AnchorList from './components/AnchorList.vue'
 
 export default {
   name: 'App',
@@ -24,8 +26,9 @@ export default {
     Page1,
     Page2,
     Page3,
-    Page4
-  },
+    Page4,
+    AnchorList
+},
   mounted() {
     window.onscroll = () => {
       const scrollY = window.scrollY / window.innerHeight;
