@@ -27,7 +27,7 @@ export default {
   name: 'PageZero',
   props: {
     scrollY: Number,
-    winHeight: Number
+    winHeight: Number,
   },
   computed: {
     pageStyle() {
@@ -39,7 +39,11 @@ export default {
   },
   methods: {
     goToMarket() {
-      window.open("./starmystery-release-v1.0.0-8147ab3.apk")
+      if (navigator.userAgent.includes("Android")) {
+        window.open("market://detail?id=com.faintmoon.staratlas")
+      } else {
+        this.$emit("openDialog")
+      }
     }
   }
 }
