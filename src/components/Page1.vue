@@ -55,15 +55,19 @@ export default {
             }
         },
         starPosition() {
-            if (this.winWidth / this.winHeight > 2560 / 1600) {
+            const imgWidth = 1920;
+            const imgHeight = 1200;
+            const starX = 984;
+            const starY = 523;
+            if (this.winWidth / this.winHeight > imgWidth / imgHeight) {
                 return [
-                    708 * this.winWidth / 2560 - (1600 * this.winWidth / 2560 - this.winHeight) / 2,
-                    1326 * this.winWidth / 2560
+                    starY * this.winWidth / imgWidth - (imgHeight * this.winWidth / imgWidth - this.winHeight) / 2,
+                    starX * this.winWidth / imgWidth
                 ];
             } else {
                 return [
-                    708 * this.winHeight / 1600,
-                    1326 * this.winHeight / 1600 - (2560 * this.winHeight / 1600 - this.winWidth) / 2
+                    starY * this.winHeight / imgHeight,
+                    starX * this.winHeight / imgHeight - (imgWidth * this.winHeight / imgHeight - this.winWidth) / 2
                 ];
             }
         },
