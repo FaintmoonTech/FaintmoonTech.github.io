@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <img src="https://img1.imgtp.com/2023/07/15/CcaVaRGJ.png" class="bg" />
+    <img src="https://s1.imagehub.cc/images/2023/10/20/bg0.jpeg" class="bg" />
     <div id="scrollEle"></div>
     <AnchorList :scrollY="scrollY" />
     <Page0 :scrollY="scrollY" :winHeight="winHeight" @openDialog="dialogVisible = true"/>

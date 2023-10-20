@@ -1,13 +1,13 @@
 <template>
     <div class="page" :style="pageStyle">
-        <img src="https://img1.imgtp.com/2023/07/15/5gonphfR.png" class="bg" :style="{opacity: 2 * scrollY - 19.5}" />
-        <img src="https://img1.imgtp.com/2023/07/15/Xi3SWOwv.png" class="bg" :style="{opacity: 2 * scrollY - 21.5}" />
-        <img src="https://img1.imgtp.com/2023/07/15/lGTJ8RAn.png" class="bg" :style="{opacity: 2 * scrollY - 23.5}" />
-        <img src="https://img1.imgtp.com/2023/07/15/p7iOVHcD.png" class="bg" :style="{opacity: 2 * scrollY - 25.5}" />
-        <img src="https://img1.imgtp.com/2023/07/15/Sg2pj0sv.png" class="bg" :style="{opacity: 2 * scrollY - 27.5}" />
-        <img src="https://img1.imgtp.com/2023/07/15/RbUE1tRF.png" class="bg" :style="{opacity: 2 * scrollY - 29.5}" />
-        <img src="https://img1.imgtp.com/2023/07/15/gcuR4v8Y.png" class="bg" :style="{opacity: 2 * scrollY - 31.5}" />
-        <img src="https://img1.imgtp.com/2023/07/15/cLnrQawo.png" class="bg" :style="{opacity: 2 * scrollY - 33.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg1.jpeg" class="bg" :style="{opacity: 2 * scrollY - 19.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg2.jpeg" class="bg" :style="{opacity: 2 * scrollY - 21.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg3.jpeg" class="bg" :style="{opacity: 2 * scrollY - 23.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg4.jpeg" class="bg" :style="{opacity: 2 * scrollY - 25.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg5.jpeg" class="bg" :style="{opacity: 2 * scrollY - 27.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg6.jpeg" class="bg" :style="{opacity: 2 * scrollY - 29.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg7.jpeg" class="bg" :style="{opacity: 2 * scrollY - 31.5}" />
+        <img src="https://s1.imagehub.cc/images/2023/10/20/bg8.jpeg" class="bg" :style="{opacity: 2 * scrollY - 33.5}" />
         <p class="title">
             时空旅行
         </p>
